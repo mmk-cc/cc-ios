@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TMz-JJ-u1J">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navbar-->
+        <scene sceneID="CCy-lv-lLe">
+            <objects>
+                <navigationController id="hcf-LZ-h8Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Navbar" id="AJ8-NU-Uc0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gng-z4-GU5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cMt-0j-XrE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFG-QV-zO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="-552"/>
+        </scene>
+        <!--ConcertInfo-->
+        <scene sceneID="ocp-rO-dYd">
+            <objects>
+                <viewController storyboardIdentifier="ConcertViewController" id="2Kn-If-7Jf" userLabel="ConcertInfo" customClass="ConcertViewController" customModule="SwiftPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u4k-iY-xMA"/>
+                        <viewControllerLayoutGuide type="bottom" id="zJf-S9-UGc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YA4-Me-tvN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="[Main artist name]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feR-cJ-XhV">
+                                <rect key="frame" x="193" y="76" width="214.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-qE-KCq">
+                                <rect key="frame" x="175" y="116" width="249" height="415"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Instrument and Genre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlc-xw-lER">
+                                        <rect key="frame" x="0.0" y="20" width="241" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date and Time" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fg6-cx-oba">
+                                        <rect key="frame" x="-1" y="115" width="242" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOd-Qy-Vt3">
+                                        <rect key="frame" x="0.0" y="164" width="249" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Auditorium Address" translatesAutoresizingMaskIntoConstraints="NO" id="dKV-gf-e5P">
+                                        <rect key="frame" x="-6" y="275" width="241" height="118"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKT-0m-PVV">
+                                        <rect key="frame" x="0.0" y="8" width="47" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accompanying Artists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wm-tB-BSt">
+                                        <rect key="frame" x="0.0" y="58" width="168" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date and time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6c-Ai-5ls">
+                                        <rect key="frame" x="-1" y="103" width="131" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Festival or Series" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH7-uh-mPT">
+                                        <rect key="frame" x="0.0" y="153" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Official Announcement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBn-9k-8Rg">
+                                        <rect key="frame" x="-1" y="197" width="169" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auditorium address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPz-43-GQu">
+                                        <rect key="frame" x="0.0" y="260" width="168" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="OrganizerURL" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="BjC-6d-UPg">
+                                        <rect key="frame" x="-1" y="210" width="242" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="- " minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="mty-AO-Piq">
+                                        <rect key="frame" x="-1" y="65" width="250" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="6Pl-na-xmj"/>
+                                    <constraint firstAttribute="height" constant="415" id="qAs-YM-21b"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Save to My Concerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amh-z2-20s">
+                                <rect key="frame" x="16" y="28" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Close" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfI-fB-1Pk">
+                                <rect key="frame" x="16" y="57" width="44" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WzL-dc-OSx" appends="YES" id="PKr-t1-Jie"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKR-qE-KCq" firstAttribute="top" secondItem="feR-cJ-XhV" secondAttribute="bottom" constant="8" id="1YZ-MM-62c"/>
+                            <constraint firstAttribute="centerX" secondItem="feR-cJ-XhV" secondAttribute="centerX" id="BNt-2Z-35l"/>
+                            <constraint firstItem="feR-cJ-XhV" firstAttribute="top" secondItem="u4k-iY-xMA" secondAttribute="bottom" constant="56" id="IzH-Ye-6ET"/>
+                            <constraint firstItem="feR-cJ-XhV" firstAttribute="top" secondItem="u4k-iY-xMA" secondAttribute="bottom" constant="56" id="bon-9B-St7"/>
+                            <constraint firstAttribute="centerX" secondItem="gKR-qE-KCq" secondAttribute="centerX" id="n2x-iC-o1h"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="jzU-rb-2ou"/>
+                        <barButtonItem title="Item" id="hdj-lP-sd6"/>
+                        <barButtonItem title="Item" id="87y-kw-Gsq"/>
+                    </toolbarItems>
+                    <connections>
+                        <outlet property="InstrumentAndGenre" destination="vlc-xw-lER" id="A89-ri-n3G"/>
+                        <outlet property="accompanyingArtists" destination="mty-AO-Piq" id="fcz-lr-9zI"/>
+                        <outlet property="addy" destination="dKV-gf-e5P" id="TcA-Uz-HHb"/>
+                        <outlet property="closeMe" destination="YfI-fB-1Pk" id="KBS-q5-d55"/>
+                        <outlet property="dateTime" destination="Fg6-cx-oba" id="jfi-Et-Y8L"/>
+                        <outlet property="festivalSeries" destination="qOd-Qy-Vt3" id="GGV-Pc-164"/>
+                        <outlet property="nameLabel" destination="feR-cJ-XhV" id="r5e-GQ-pEE"/>
+                        <outlet property="organizerURL" destination="BjC-6d-UPg" id="2oE-C6-rzV"/>
+                        <outlet property="saveMe" destination="amh-z2-20s" id="MGU-f5-Fyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpE-Cp-8gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WzL-dc-OSx"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-543"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="qIk-WU-HhK">
+            <objects>
+                <splitViewController id="vdw-yR-cKD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="Cfx-vS-Ovr"/>
+                    <connections>
+                        <segue destination="hcf-LZ-h8Y" kind="relationship" relationship="masterViewController" id="xsd-Pp-dQU"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0g-th-SF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1256" y="-568"/>
+        </scene>
+        <!--TrySearch-->
+        <scene sceneID="hag-OK-LR5">
+            <objects>
+                <viewController id="mTM-he-HJB" customClass="CitySearchViewController" customModule="SwiftPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XT7-UZ-99U"/>
+                        <viewControllerLayoutGuide type="bottom" id="XNc-2F-muu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oSs-yx-Qik">
+                        <rect key="frame" x="0.0" y="94" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search by city" translatesAutoresizingMaskIntoConstraints="NO" id="DoA-B7-smP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mTM-he-HJB" id="XYh-Gz-KFA"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MoH-xv-oDQ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mTM-he-HJB" id="AdW-Pd-HzO"/>
+                                    <outlet property="delegate" destination="mTM-he-HJB" id="gBg-Yz-rmb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TrySearch" id="tRp-xy-hGS"/>
+                    <connections>
+                        <outlet property="searchBar" destination="DoA-B7-smP" id="fdj-jG-jEK"/>
+                        <outlet property="tableView" destination="MoH-xv-oDQ" id="X4r-HU-luc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRg-na-6MM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2179" y="1001"/>
+        </scene>
+        <!--Lessons-->
+        <scene sceneID="Cw4-vg-Yke">
+            <objects>
+                <viewController id="OrC-Bz-pIf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZdP-e7-uWp"/>
+                        <viewControllerLayoutGuide type="bottom" id="x0c-iy-vda"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQE-My-hAB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lessons go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjC-iN-9JD">
+                                <rect key="frame" x="254" y="150" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lessons" id="fBt-Y9-lqc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="The-r8-TSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="1320"/>
+        </scene>
+        <!--My Concerts-->
+        <scene sceneID="mQJ-yo-dJH">
+            <objects>
+                <viewController id="kfW-eg-p8G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzK-E1-OX3"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1y-A7-E8W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QeW-gc-vby">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Concerts go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFP-OX-6d1">
+                                <rect key="frame" x="196" y="215" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Concerts" id="2kG-sT-FQp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMk-hL-t4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924" y="286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PhZ-OS-btT">
+            <objects>
+                <tabBarController modalTransitionStyle="partialCurl" id="TMz-JJ-u1J" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9Dw-RE-eAj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kfW-eg-p8G" kind="relationship" relationship="viewControllers" id="YZm-iK-Eqe"/>
+                        <segue destination="OrC-Bz-pIf" kind="relationship" relationship="viewControllers" id="vpZ-yV-b60"/>
+                        <segue destination="vdw-yR-cKD" kind="relationship" relationship="viewControllers" id="Q4t-pW-NF7"/>
+                        <segue destination="mTM-he-HJB" kind="relationship" relationship="viewControllers" id="bW1-xJ-ggs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rej-65-zvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2340" y="-30"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Search" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="SearchViewController" customModule="SwiftPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Lgd-ka-Lh5">
+                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" text="" placeholder="Search by city" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-G5-N1P">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="j5a-4z-fNE"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OdH-G5-N1P" secondAttribute="trailing" id="8Lp-f2-POd"/>
+                            <constraint firstItem="Lgd-ka-Lh5" firstAttribute="top" secondItem="OdH-G5-N1P" secondAttribute="bottom" id="DkJ-fi-ux7"/>
+                            <constraint firstItem="OdH-G5-N1P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LFz-sl-bLn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lgd-ka-Lh5" secondAttribute="bottom" id="LeO-bQ-uVG"/>
+                            <constraint firstItem="Lgd-ka-Lh5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X3O-ze-EIQ"/>
+                            <constraint firstItem="OdH-G5-N1P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hbx-Xo-Jz3"/>
+                            <constraint firstAttribute="trailing" secondItem="Lgd-ka-Lh5" secondAttribute="trailing" id="vne-Vq-fPG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="I4A-OI-p3v"/>
+                    <navigationItem key="navigationItem" id="gFp-BA-GpK"/>
+                    <connections>
+                        <outlet property="searchBar" destination="OdH-G5-N1P" id="I7b-dY-E1s"/>
+                        <outlet property="tableView" destination="Lgd-ka-Lh5" id="mg1-bt-syK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="-532"/>
+        </scene>
+    </scenes>
+</document>
